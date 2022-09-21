@@ -1,0 +1,17 @@
+record(bo, "PRESSX") {
+    field(DESC, "record for testing - press key X")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_axisX nd780")
+}
+
+record(bo, "PRESSC") {
+    field(DESC, "record for testing - press key X")
+    field(DTYP, "stream")
+    field(ZNAM, "0") 
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_clear nd780")
+}

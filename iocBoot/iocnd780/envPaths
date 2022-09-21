@@ -1,0 +1,6 @@
+epicsEnvSet("IOC","iocnd780")
+epicsEnvSet("TOP","/opt/epics-R3.16.2/heidenhain-nd780-epics-ioc")
+epicsEnvSet("MODULES","/opt/epics-R3.16.2")
+epicsEnvSet("ASYN","/opt/epics-R3.16.2/asyn")
+epicsEnvSet("STREAM","/opt/epics-R3.16.2/StreamDevice")
+epicsEnvSet("EPICS_BASE","/opt/epics-R3.16.2/base")

@@ -1,0 +1,57 @@
+#####################################################################
+# Protocol file for Heidenhain's position display unit, model ND780 
+
+# GAS - Automation and Software Group
+
+# Author: Andre de Oliveira Aguila Favoto 
+
+#####################################################################
+
+#General Setup
+
+OutTerminator = CR;
+InTerminator  = CR LF;
+
+#####################################################################
+
+# Keys and commands based on ND780's manual
+
+write_zero      {out 0x1B "T0000"} #Key - 0
+write_one       {out 0x1B "T0001"} #Key - 1
+write_two       {out 0x1B "T0002"} #Key - 2
+write_three     {out 0x1B "T0003"} #Key - 3
+write_four      {out 0x1B "T0004"} #Key - 4 
+write_five      {out 0x1B "T0005"} #Key - 5
+write_six       {out 0x1B "T0006"} #Key - 6
+write_seven     {out 0x1B "T0007"} #Key - 7
+write_eight     {out 0x1B "T0008"} #Key - 8
+write_nine      {out 0x1B "T0009"} #Key - 9
+write_clear     {out 0x1B "T0100"} #Key - C
+write_minus     {out 0x1B "T0101"} #Key - -
+write_point     {out 0x1B "T0102"} #Key - .
+write_ent       {out 0x1B "T0104"} #Key - ENTER
+write_axisX     {out 0x1B "T0109"} #Key - X
+write_axisY     {out 0x1B "T0110"} #Key - Y
+write_axisZ     {out 0x1B "T0111"} #Key - Z
+write_fn1       {out 0x1B "T0114"} #Key - Function 1
+write_fn2       {out 0x1B "T0115"} #Key - Function 2
+write_fn3       {out 0x1B "T0116"} #Key - Function 3
+write_fn4       {out 0x1B "T0117"} #Key - Function 4
+write_left      {out 0x1B "T0135"} #Key - Left arrow
+write_right     {out 0x1B "T0136"} #Key - Right arrow
+write_up        {out 0x1B "T0137"} #Key - Up arrow
+write_down      {out 0x1B "T0138"} #Key - Down arrow
+cmd_sendID      {out 0x1B "A0000"} #Command - Send device ID
+cmd_sendPos     {out 0x1B "A0200"} #Command - Send current position
+cmd_reset       {out 0x1B "S0000"} #Command - Counter reset
+cmd_lock        {out 0x1B "S0001"} #Command - Lock keyboard
+cmd_unlock      {out 0x1B "S0002"} #Command - Unlock keyboard
+
+####################################################################
+
+# Routines
+
+get_position{
+    out 0x1B "A0200";
+    in  "%c=+ %f %c";
+}
