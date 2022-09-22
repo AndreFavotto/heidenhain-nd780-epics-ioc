@@ -1,17 +1,209 @@
-record(bo, "PRESSX") {
-    field(DESC, "record for testing - press key X")
+##########################--Keyboard--###############################
+
+record(bo, "Key-0") {
+    field(DESC, "toggle key 0")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_zero nd780")
+}
+
+record(bo, "Key-1") {
+    field(DESC, "toggle key 1")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_one nd780")
+}
+
+record(bo, "Key-2") {
+    field(DESC, "toggle key 2")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(HIGH, "1")
     field(OUT,  "@nd780.proto write_axisX nd780")
 }
-
-record(bo, "PRESSC") {
-    field(DESC, "record for testing - press key X")
+record(bo, "Key-3") {
+    field(DESC, "toggle key 3")
     field(DTYP, "stream")
-    field(ZNAM, "0") 
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_three nd780")
+}
+record(bo, "Key-4") {
+    field(DESC, "toggle key 4")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_four nd780")
+}
+record(bo, "Key-5") {
+    field(DESC, "toggle key 5")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_five nd780")
+}
+record(bo, "Key-6") {
+    field(DESC, "toggle key 6")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_six nd780")
+}
+record(bo, "Key-7") {
+    field(DESC, "toggle key 7")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_seven nd780")
+}
+record(bo, "Key-8") {
+    field(DESC, "toggle key 8")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_eight nd780")
+}
+record(bo, "Key-9") {
+    field(DESC, "toggle key 9")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_nine nd780")
+}
+record(bo, "Key-C") {
+    field(DESC, "toggle key C")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
     field(ONAM, "1")
     field(HIGH, "1")
     field(OUT,  "@nd780.proto write_clear nd780")
+}
+record(bo, "Key-minus") {
+    field(DESC, "toggle key minus")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_minus nd780")
+}
+record(bo, "Key-point") {
+    field(DESC, "toggle key point")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_point nd780")
+}
+record(bo, "Key-ent") {
+    field(DESC, "toggle key enter")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_ent nd780")
+}
+
+##########################--Functions--###############################
+
+record(bo, "Key-X") {
+    field(DESC, "toggle key X")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_axisX nd780")
+}
+record(bo, "Key-Y") {
+    field(DESC, "toggle key Y")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_axisY nd780")
+}
+record(bo, "Key-Z") {
+    field(DESC, "toggle key Z")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_axisZ nd780")
+}
+record(bo, "Key-FN1") {
+    field(DESC, "toggle key Function 1")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_fn1 nd780")
+}
+record(bo, "Key-FN2") {
+    field(DESC, "toggle key Function 1")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_fn2 nd780")
+}
+record(bo, "Key-FN3") {
+    field(DESC, "toggle key Function 1")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_fn3 nd780")
+}
+record(bo, "Key-FN4") {
+    field(DESC, "toggle key Function 4")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto write_fn4 nd780")
+}
+
+##########################--Monitoring--###############################
+
+record(ai, "PosX-Mon") {
+    field(DESC, "Get X axis position")
+    field(DTYP, "stream")
+    field(SCAN, ".1 second")
+    field(INP,  "@nd780.proto get_positionX nd780")
+}
+
+record(ai, "PosY-Mon") {
+    field(DESC, "Get Y axis position")
+    field(DTYP, "stream")
+    field(SCAN, "I/O Intr")
+    field(INP,  "@nd780.proto get_positionY nd780")
+}
+
+record(ai, "PosZ-Mon") {
+    field(DESC, "Get Z axis position")
+    field(DTYP, "stream")
+    field(SCAN, "I/O Intr")
+    field(INP,  "@nd780.proto get_positionZ nd780")
+}
+
+##########################--Commands--###############################
+
+record(bo, "Rst-Cmd") {
+    field(DESC, "Reset device")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(HIGH, "1")
+    field(OUT,  "@nd780.proto cmd_reset nd780")
 }

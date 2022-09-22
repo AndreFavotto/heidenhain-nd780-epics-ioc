@@ -1,20 +1,22 @@
-#####################################################################
-# Protocol file for Heidenhain's position display unit, model ND780 
+###########################################################################
+# Protocol file for Heidenhain's position display unit, model ND780
 
 # GAS - Automation and Software Group
 
 # Author: Andre de Oliveira Aguila Favoto 
 
-#####################################################################
-
-#General Setup
+###########################################################################
+#
+#
+#
+#
+############################---General Setup---############################
 
 OutTerminator = CR;
 InTerminator  = CR LF;
 
-#####################################################################
 
-# Keys and commands based on ND780's manual
+###############################---Keyboard---###############################
 
 write_zero      {out 0x1B "T0000"} #Key - 0
 write_one       {out 0x1B "T0001"} #Key - 1
@@ -41,17 +43,22 @@ write_left      {out 0x1B "T0135"} #Key - Left arrow
 write_right     {out 0x1B "T0136"} #Key - Right arrow
 write_up        {out 0x1B "T0137"} #Key - Up arrow
 write_down      {out 0x1B "T0138"} #Key - Down arrow
+
+##############################---Commands---##############################
+
 cmd_sendID      {out 0x1B "A0000"} #Command - Send device ID
 cmd_sendPos     {out 0x1B "A0200"} #Command - Send current position
-cmd_reset       {out 0x1B "S0000"} #Command - Counter reset
+cmd_reset       {out 0x1B "S0000"} #Command - Reset device
 cmd_lock        {out 0x1B "S0001"} #Command - Lock keyboard
 cmd_unlock      {out 0x1B "S0002"} #Command - Unlock keyboard
 
-####################################################################
+##############################---Inputs---##############################
 
-# Routines
-
-get_position{
-    out 0x1B "A0200";
-    in  "%c=+ %f %c";
-}
+get_positionX   {
+                out 0x1B "A0200";
+                in  "\x06X=%#f %*[RrDd]";
+                in  "Y=%#*f %*[RrDd]";
+                in  "Z=%#*f %*[RrDd]";
+                }
+get_positionY   {in  "Y=%#f %*[RrDd]"}
+get_positionZ   {in "Z=%#f %*[RrDd]"}
