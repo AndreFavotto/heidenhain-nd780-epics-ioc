@@ -54,11 +54,15 @@ cmd_unlock      {out 0x1B "S0002"} #Command - Unlock keyboard
 
 ##############################---Inputs---##############################
 
-get_positionX   {
+#Axis output is in the format: X=[+-]0.0000["][RrDd]
+get_positions   {
                 out 0x1B "A0200";
-                in  "\x06X=%#f %*[RrDd]";
-                in  "Y=%#*f %*[RrDd]";
-                in  "Z=%#*f %*[RrDd]";
+                in  "\x06X=%#f" "%*?c" "%*[RrDd]";
+                in  "Y=%#*f"    "%*?c" "%*[RrDd]";
+                in  "Z=%#*f" "%*?c" "%*[RrDd]";
                 }
-get_positionY   {in  "Y=%#f %*[RrDd]"}
-get_positionZ   {in "Z=%#f %*[RrDd]"}
+get_positionX   {in  "\x06X=%#f" "%*?c" "%*[RrDd]"}
+get_positionY   {in  "Y=%#f" "%*?c" "%*[RrDd]"}
+get_positionZ   {in  "Z=%#f" "%*?c" "%*[RrDd]"}
+get_mode        {in  "%*[XYZ]=%#*f" "%*?c" "%[RrDd]"}
+get_unit        {in  "%*[XYZ]=%#*f" "%?c" "%*[RrDd]"}

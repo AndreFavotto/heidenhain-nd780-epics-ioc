@@ -175,11 +175,18 @@ record(bo, "Key-FN4") {
 }
 
 ##########################--Monitoring--###############################
+#Trigger I/O Interruption in other monitoring records every .1 sec
+record(ai, "Pos-Aux") {
+    field(DESC, "Auxiliar record to trigger I/O interruption")
+    field(DTYP, "stream")
+    field(SCAN, ".1 second")
+    field(INP,  "@nd780.proto get_positions nd780")
+}
 
 record(ai, "PosX-Mon") {
     field(DESC, "Get X axis position")
     field(DTYP, "stream")
-    field(SCAN, ".1 second")
+    field(SCAN, "I/O Intr")
     field(INP,  "@nd780.proto get_positionX nd780")
 }
 
@@ -195,6 +202,20 @@ record(ai, "PosZ-Mon") {
     field(DTYP, "stream")
     field(SCAN, "I/O Intr")
     field(INP,  "@nd780.proto get_positionZ nd780")
+}
+
+record(stringin, "EU") {
+    field(DESC, "Gets current Engineering Unit")
+    field(DTYP, "stream")
+    field(SCAN, "I/O Intr")
+    field(INP,  "@nd780.proto get_unit nd780")
+}
+
+record(stringin, "Mode") {
+    field(DESC, "Gets current measurement mode")
+    field(DTYP, "stream")
+    field(SCAN, "I/O Intr")
+    field(INP,  "@nd780.proto get_mode nd780")
 }
 
 ##########################--Commands--###############################
