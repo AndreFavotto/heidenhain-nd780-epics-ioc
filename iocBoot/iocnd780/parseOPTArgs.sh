@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 usage () {
     echo "Usage:" >&2
     echo "  $1 -p [PORT] -P [P_VAL] -R [R_VAL] " >&2
@@ -11,21 +13,18 @@ usage () {
 }
 
 while getopts ':p:P:R:' opt; do
-  case "$opt" in
-    p) PORT="$OPTARG" ;;
-    P) P="$OPTARG" ;;
-    R) R="$OPTARG" ;;
-    :) 
-      echo -e "Option -$OPTARG requires an argument."
-      usage $0
-      exit 1
-      ;;
-
-    ?)
-      echo -e "Invalid -$OPTARG command option."
-      usage $0
-      exit 1
-      ;;
+    case "$opt" in
+        p) PORT="$OPTARG" ;;
+        P) P="$OPTARG" ;;
+        R) R="$OPTARG" ;;
+        ?) echo "Invalid -$OPTARG command option.">&2
+        usage $0
+        exit 1
+        ;;
+        :) echo "Missing argument -$OPTARG">&2
+        usage $0
+        exit 1
+        ;;
     esac
 done
 
