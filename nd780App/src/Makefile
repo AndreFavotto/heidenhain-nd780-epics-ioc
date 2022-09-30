@@ -42,6 +42,8 @@ include $(TOP)/configure/RULES
 nd780_DBD += stream.dbd
 nd780_DBD += asyn.dbd
 nd780_DBD += drvAsynSerialPort.dbd
+nd780_DBD += calcSupport.dbd
 
 nd780_LIBS += stream
 nd780_LIBS += asyn
+nd780_LIBS += calc

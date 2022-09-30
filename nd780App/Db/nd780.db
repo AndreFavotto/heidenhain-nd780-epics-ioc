@@ -1,193 +1,230 @@
 ##########################--Keyboard--###############################
 
-record(bo, "Key-0") {
+record(bo, "Key0") {
     field(DESC, "toggle key 0")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_zero nd780")
 }
-
-record(bo, "Key-1") {
+record(bo, "Key1") {
     field(DESC, "toggle key 1")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_one nd780")
 }
-
-record(bo, "Key-2") {
+record(bo, "Key2") {
     field(DESC, "toggle key 2")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_axisX nd780")
 }
-record(bo, "Key-3") {
+record(bo, "Key3") {
     field(DESC, "toggle key 3")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_three nd780")
 }
-record(bo, "Key-4") {
+record(bo, "Key4") {
     field(DESC, "toggle key 4")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_four nd780")
 }
-record(bo, "Key-5") {
+record(bo, "Key5") {
     field(DESC, "toggle key 5")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_five nd780")
 }
-record(bo, "Key-6") {
+record(bo, "Key6") {
     field(DESC, "toggle key 6")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_six nd780")
 }
-record(bo, "Key-7") {
+record(bo, "Key7") {
     field(DESC, "toggle key 7")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_seven nd780")
 }
-record(bo, "Key-8") {
+record(bo, "Key8") {
     field(DESC, "toggle key 8")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_eight nd780")
 }
-record(bo, "Key-9") {
+record(bo, "Key9") {
     field(DESC, "toggle key 9")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_nine nd780")
 }
-record(bo, "Key-C") {
+record(bo, "KeyC") {
     field(DESC, "toggle key C")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_clear nd780")
 }
-record(bo, "Key-minus") {
+record(bo, "KeyMinus") {
     field(DESC, "toggle key minus")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_minus nd780")
 }
-record(bo, "Key-point") {
+record(bo, "KeyPoint") {
     field(DESC, "toggle key point")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_point nd780")
 }
-record(bo, "Key-ent") {
+record(bo, "KeyEnt") {
     field(DESC, "toggle key enter")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_ent nd780")
 }
-
-##########################--Functions--###############################
-
-record(bo, "Key-X") {
+record(bo, "KeyX") {
     field(DESC, "toggle key X")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_axisX nd780")
 }
-record(bo, "Key-Y") {
+record(bo, "KeyY") {
     field(DESC, "toggle key Y")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_axisY nd780")
 }
-record(bo, "Key-Z") {
+record(bo, "KeyZ") {
     field(DESC, "toggle key Z")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_axisZ nd780")
 }
-record(bo, "Key-FN1") {
+record(bo, "KeyFN1") {
     field(DESC, "toggle key Function 1")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_fn1 nd780")
 }
-record(bo, "Key-FN2") {
+record(bo, "KeyFN2") {
     field(DESC, "toggle key Function 1")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_fn2 nd780")
 }
-record(bo, "Key-FN3") {
+record(bo, "KeyFN3") {
     field(DESC, "toggle key Function 1")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_fn3 nd780")
 }
-record(bo, "Key-FN4") {
+record(bo, "KeyFN4") {
     field(DESC, "toggle key Function 4")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto write_fn4 nd780")
 }
+record(bo, "KeyRight") {
+    field(DESC, "toggle key right arrow")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(OUT,  "@nd780.proto write_right nd780")
+}
+record(bo, "KeyLeft") {
+    field(DESC, "toggle key left arrow")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(OUT,  "@nd780.proto write_left nd780")
+}
+record(bo, "KeyUp") {
+    field(DESC, "toggle key up arrow")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(OUT,  "@nd780.proto write_up nd780")
+}
+record(bo, "KeyDown") {
+    field(DESC, "toggle key down arrow")
+    field(DTYP, "stream")
+    field(ZNAM, "0")
+    field(ONAM, "1")
+    field(OUT,  "@nd780.proto write_down nd780")
+}
 
-##########################--Monitoring--###############################
-#Trigger I/O Interruption in other monitoring records every .1 sec
-record(ai, "Pos-Aux") {
-    field(DESC, "Auxiliar record to trigger I/O interruption")
+##########################--Auxiliary Records--###############################
+
+record(ai, "IntrAux") {
+    field(DESC, "Triggers I/O Interruption")
     field(DTYP, "stream")
     field(SCAN, ".1 second")
     field(INP,  "@nd780.proto get_positions nd780")
 }
+record(stringin, "ModeXAux") {
+    field(DESC, "Gets X current mode")
+    field(DTYP, "stream")
+    field(SCAN, "I/O Intr")
+    field(INP,  "@nd780.proto get_modeX nd780")
+}
+record(stringin, "ModeYAux") {
+    field(DESC, "Gets Y current mode")
+    field(DTYP, "stream")
+    field(SCAN, "I/O Intr")
+    field(INP,  "@nd780.proto get_modeY nd780")
+}
+record(stringin, "ModeZAux") {
+    field(DESC, "Gets Z current mode")
+    field(DTYP, "stream")
+    field(SCAN, "I/O Intr")
+    field(INP,  "@nd780.proto get_modeZ nd780")
+}
+record(stringin, "EGUAux") {
+    field(DESC, "Gets current Engineering Unit")
+    field(DTYP, "stream")
+    field(SCAN, "I/O Intr")
+    field(INP,  "@nd780.proto get_unit nd780")
+}
+##########################--Monitoring--###############################
 
 record(ai, "PosX-Mon") {
     field(DESC, "Get X axis position")
     field(DTYP, "stream")
     field(SCAN, "I/O Intr")
     field(INP,  "@nd780.proto get_positionX nd780")
+}
+
+record(scalcout, "ModeX-Mon") {
+    field(DESC, "Get current X measure mode")
+    field(INAA, "ModeXAux CPP")
+    field(BB, "Radius")
+    field(CC, "Delta Radius")
+    field(DD, "Diameter")
+    field(EE, "Delta Diameter")
+    field(CALC, "AA='R'?BB:(AA='r'?CC:(AA='D'?DD:(AA=d?EE:'Not found')))")
 }
 
 record(ai, "PosY-Mon") {
@@ -197,6 +234,16 @@ record(ai, "PosY-Mon") {
     field(INP,  "@nd780.proto get_positionY nd780")
 }
 
+record(scalcout, "ModeY-Mon") {
+    field(DESC, "Get current YX measure mode")
+    field(INAA, "ModeYAux CPP")
+    field(BB, "Raio")
+    field(CC, "Delta - Raio")
+    field(DD, "Diametro")
+    field(EE, "Delta - Diametro")
+    field(CALC, "AA='R'?BB:(AA='r'?CC:(AA='D'?DD:(AA=d?EE:'Not found')))")
+}
+
 record(ai, "PosZ-Mon") {
     field(DESC, "Get Z axis position")
     field(DTYP, "stream")
@@ -204,18 +251,21 @@ record(ai, "PosZ-Mon") {
     field(INP,  "@nd780.proto get_positionZ nd780")
 }
 
-record(stringin, "EU") {
-    field(DESC, "Gets current Engineering Unit")
-    field(DTYP, "stream")
-    field(SCAN, "I/O Intr")
-    field(INP,  "@nd780.proto get_unit nd780")
+record(scalcout, "ModeZ-Mon") {
+    field(DESC, "Get current Z measure mode")
+    field(INAA, "ModeZAux CPP")
+    field(BB, "Raio")
+    field(CC, "Delta - Raio")
+    field(DD, "Diametro")
+    field(EE, "Delta - Diametro")
+    field(CALC, "AA='R'?BB:(AA='r'?CC:(AA='D'?DD:(AA=d?EE:'Not found')))")
 }
 
-record(stringin, "Mode") {
-    field(DESC, "Gets current measurement mode")
-    field(DTYP, "stream")
-    field(SCAN, "I/O Intr")
-    field(INP,  "@nd780.proto get_mode nd780")
+record(scalcout, "EU-Mon") {
+    field(DESC, "Get current engineering units")
+    field(INAA, "EUAux CPP")
+    field(CALC, "AA=' '?'mm':(AA='\"'?'pol':'Not found')")
+    # field(FLNK, "putsEGU")
 }
 
 ##########################--Commands--###############################
@@ -225,6 +275,65 @@ record(bo, "Rst-Cmd") {
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(HIGH, "1")
     field(OUT,  "@nd780.proto cmd_reset nd780")
 }
+
+record(seq, "chEU-Cmd") {
+    field(DESC, "Toggle mm/pol EU")
+    field(SELM, "All")
+
+    field(DLY0, "0.5")
+    field(DOL0, "1")
+    field(LNK0, "KeyC CP")
+
+    field(DLY1, "0.5")
+    field(DOL1, "1")
+    field(LNK1, "KeyLeft CP")
+
+    field(DLY2, "0.5")
+    field(DOL2, "1")
+    field(LNK2, "KeyFN1 CP")
+
+    field(DLY3, "0.5")
+    field(DOL3, "1")
+    field(LNK3, "KeyEnt CP")
+
+    field(DLY4, "0.5")
+    field(DOL4, "1")
+    field(LNK4, "KeyFN1 CP")
+    
+    field(DLY5, "0.5")
+    field(DOL5, "1")
+    field(LNK5, "KeyEnt CP")
+
+    field(DLY6, "0.5")
+    field(DOL6, "1")
+    field(LNK6, "KeyC CP")
+}
+
+record(seq, "PutPass-Cmd") {
+    field(DESC, "Types Password")
+    field(SELM, "All")
+
+    field(DLY0, "0.5")
+    field(DOL0, "1")
+    field(LNK0, "Key9-Cmd")
+
+    field(DLY1, "0.5")
+    field(DOL1, "1")
+    field(LNK1, "Key5-Cmd")
+
+    field(DLY2, "0.5")
+    field(DOL2, "1")
+    field(LNK2, "Key1-Cmd")
+
+    field(DLY2, "0.5")
+    field(DOL2, "1")
+    field(LNK2, "Key4-Cmd")
+
+    field(DLY2, "0.5")
+    field(DOL2, "1")
+    field(LNK2, "Key8-Cmd")
+}
+
+# Implement record to change mode

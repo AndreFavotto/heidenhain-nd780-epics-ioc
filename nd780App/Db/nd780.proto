@@ -64,5 +64,7 @@ get_positions   {
 get_positionX   {in  "\x06X=%#f" "%*?c" "%*[RrDd]"}
 get_positionY   {in  "Y=%#f" "%*?c" "%*[RrDd]"}
 get_positionZ   {in  "Z=%#f" "%*?c" "%*[RrDd]"}
-get_mode        {in  "%*[XYZ]=%#*f" "%*?c" "%[RrDd]"}
+get_modeX       {in  "\x06X=%#*f" "%*?c" "%[RrDd]"}
+get_modeY       {in  "Y=%#*f" "%*?c" "%[RrDd]"}
+get_modeZ       {in  "Z=%#*f" "%*?c" "%[RrDd]"}
 get_unit        {in  "%*[XYZ]=%#*f" "%?c" "%*[RrDd]"}
