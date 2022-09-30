@@ -23,7 +23,7 @@
 # the CONFIG_SITE file.
 
 # Variables and paths to dependent modules:
-MODULES = /opt/epics-R3.16.2/
+MODULES = /opt/epics-R3.16.2
 ASYN = $(MODULES)/asyn
 STREAM = $(MODULES)/StreamDevice
 CALC = $(MODULES)/calc

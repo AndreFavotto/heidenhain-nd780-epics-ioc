@@ -13,15 +13,13 @@ dbLoadDatabase "dbd/nd780.dbd"
 nd780_registerRecordDeviceDriver pdbbase
 
 # connect to the device serially
-drvAsynSerialPortConfigure("nd780","/dev/ttyUSB0")
+drvAsynSerialPortConfigure("nd780","${PORT}")
 asynSetOption ("nd780", 0, "baud", "115200")
 asynSetOption ("nd780", 0, "parity", "even")
 asynSetOption ("nd780", 0, "stop", "2")
 
 ## Load record instances
-dbLoadRecords "nd780App/Db/nd780.db", "user=andrefavotto"
-
-
+dbLoadRecords "nd780App/Db/nd780.db", "P=$(P), R=$(R)"
 
 ## Load record instances
 #- Set this to see messages from mySub
