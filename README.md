@@ -19,7 +19,7 @@ STREAM = $(MODULES)//<path>/<to>/<StreamDevice>
 CALC = $(MODULES)//<path>/<to>/<Calc>
 ....
 EPICS_BASE = /<path>/<to>/<epics>/<base>
-
+....
 ```
 After this, run `make install` from IOCs main directory.
 
