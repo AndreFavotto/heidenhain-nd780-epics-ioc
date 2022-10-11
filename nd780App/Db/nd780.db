@@ -1,6 +1,6 @@
 ##########################--Keyboard--###############################
 
-record(bo, "$(P)$(R)$(P)$(R)Key0-Cmd") {
+record(bo, "$(P)$(R)Key0-Cmd") {
     field(DESC, "toggle key 0")
     field(DTYP, "stream")
     field(ZNAM, "0")
@@ -178,12 +178,13 @@ record(bo, "$(P)$(R)KeyDown-Cmd") {
 
 ##########################--Auxiliary Records--###############################
 
-record(ai, "$(P)$(R)IntrAux") {
-    field(DESC, "Triggers I/O Interruption")
-    field(DTYP, "stream")
-    field(SCAN, ".1 second")
-    field(INP,  "@nd780.proto get_positions nd780")
-}
+# record(ai, "$(P)$(R)IntrAux") {
+#     field(DESC, "Triggers I/O Interruption")
+#     field(DTYP, "stream")
+#     field(SCAN, ".1 second")
+#     field(PREC, "5")
+#     field(INP,  "@nd780.proto get_positions nd780")
+# }
 record(stringin, "$(P)$(R)ModeXAux") {
     field(DESC, "Gets X current mode")
     field(DTYP, "stream")
@@ -208,12 +209,31 @@ record(stringin, "$(P)$(R)EGUAux") {
     field(SCAN, "I/O Intr")
     field(INP,  "@nd780.proto get_unit nd780")
 }
+
+record(aSub, "$(P)$(R)getConfig") {
+    field(DESC, "updload default configs")
+    field(SNAM, "getConfig")
+    field(EFLG, "ALWAYS")
+    field(LFLG, "IGNORE")
+    field(FTVA, "CHAR")
+    field(NOVA, "8500")
+    field(OUTA, "$(P)$(R)uploadConfig PP")
+}
+
+record(waveform, "$(P)$(R)uploadConfig") {
+    field(DESC, "description")
+    field(DTYP, "stream")
+    field(NELM, "8500")
+    field(INP, "@nd780.proto cmd_setDefault nd780")
+    field(FTVL, "CHAR")
+}
 ##########################--Monitoring--###############################
 
 record(ai, "$(P)$(R)PosX-Mon") {
     field(DESC, "Get X axis position")
     field(DTYP, "stream")
     field(SCAN, "I/O Intr")
+    field(PREC, "5")
     field(INP,  "@nd780.proto get_positionX nd780")
 }
 
@@ -231,6 +251,7 @@ record(ai, "$(P)$(R)PosY-Mon") {
     field(DESC, "Get Y axis position")
     field(DTYP, "stream")
     field(SCAN, "I/O Intr")
+    field(PREC, "5")
     field(INP,  "@nd780.proto get_positionY nd780")
 }
 
@@ -248,6 +269,7 @@ record(ai, "$(P)$(R)PosZ-Mon") {
     field(DESC, "Get Z axis position")
     field(DTYP, "stream")
     field(SCAN, "I/O Intr")
+    field(PREC, "5")
     field(INP,  "@nd780.proto get_positionZ nd780")
 }
 
@@ -283,12 +305,15 @@ record(seq, "$(P)$(R)ToggleMeasure-Cmd") {
 
     field(DLY0, "0.5")
     field(DOL0, "1")
-    field(LNK0, "$(P)$(R)KeyC-Cmd CP")
+    field(LNK0, "$(P)$(R)KeyC-Cmd PP")
 
     field(DLY1, "0.5")
     field(DOL1, "1")
-    field(LNK1, "$(P)$(R)KeyFN3-Cmd CP")
+    field(LNK1, "$(P)$(R)KeyFN3-Cmd PP")
 
+    field(DLY2, "0.5")
+    field(DOL2, "1")
+    field(LNK2, "$(P)$(R)KeyC-Cmd PP")
 }
 
 record(seq, "$(P)$(R)ToggleEU-Cmd") {
@@ -297,31 +322,79 @@ record(seq, "$(P)$(R)ToggleEU-Cmd") {
 
     field(DLY0, "0.5")
     field(DOL0, "1")
-    field(LNK0, "$(P)$(R)KeyC-Cmd CP")
+    field(LNK0, "$(P)$(R)KeyC-Cmd PP")
 
     field(DLY1, "0.5")
     field(DOL1, "1")
-    field(LNK1, "$(P)$(R)KeyLeft-Cmd CP")
+    field(LNK1, "$(P)$(R)KeyLeft-Cmd PP")
 
     field(DLY2, "0.5")
     field(DOL2, "1")
-    field(LNK2, "$(P)$(R)KeyFN1-Cmd CP")
+    field(LNK2, "$(P)$(R)KeyFN4-Cmd PP")
 
     field(DLY3, "0.5")
     field(DOL3, "1")
-    field(LNK3, "$(P)$(R)KeyEnt-Cmd CP")
+    field(LNK3, "$(P)$(R)KeyC-Cmd PP")
+}
+
+record(seq, "$(P)$(R)SetZeroX-Cmd") {
+    field(DESC, "Set current X position as zero")
+    field(SELM, "All")
+    
+    field(DLY0, "0.5")
+    field(DOL0, "1")
+    field(LNK0, "$(P)$(R)KeyC-Cmd PP")
+
+    field(DLY1, "0.5")
+    field(DOL1, "1")
+    field(LNK1, "$(P)$(R)KeyFN4-Cmd PP")
+
+    field(DLY2, "0.5")
+    field(DOL2, "1")
+    field(LNK2, "$(P)$(R)KeyX-Cmd PP")
+
+    field(DLY3, "0.5")
+    field(DOL3, "1")
+    field(LNK3, "$(P)$(R)KeyFN4-Cmd PP")
 
     field(DLY4, "0.5")
     field(DOL4, "1")
-    field(LNK4, "$(P)$(R)KeyFN1-Cmd CP")
-    
-    field(DLY5, "0.5")
-    field(DOL5, "1")
-    field(LNK5, "$(P)$(R)KeyEnt-Cmd CP")
+    field(LNK4, "$(P)$(R)KeyC-Cmd PP")
 
-    field(DLY6, "0.5")
-    field(DOL6, "1")
-    field(LNK6, "$(P)$(R)KeyC-Cmd CP")
+}
+
+record(seq, "$(P)$(R)SetZeroY-Cmd") {
+    field(DESC, "Set current Y position as zero")
+    field(SELM, "All")
+
+    field(DLY0, "0.5")
+    field(DOL0, "1")
+    field(LNK0, "$(P)$(R)KeyFN4-Cmd PP")
+
+    field(DLY1, "0.5")
+    field(DOL1, "1")
+    field(LNK1, "$(P)$(R)KeyY-Cmd PP")
+
+    field(DLY2, "0.5")
+    field(DOL2, "1")
+    field(LNK2, "$(P)$(R)KeyFN4-Cmd PP")
+}
+
+record(seq, "$(P)$(R)SetZeroZ-Cmd") {
+    field(DESC, "Set current Z position as zero")
+    field(SELM, "All")
+
+    field(DLY0, "0.5")
+    field(DOL0, "1")
+    field(LNK0, "$(P)$(R)KeyFN4-Cmd PP")
+
+    field(DLY1, "0.5")
+    field(DOL1, "1")
+    field(LNK1, "$(P)$(R)KeyZ-Cmd PP")
+
+    field(DLY2, "0.5")
+    field(DOL2, "1")
+    field(LNK2, "$(P)$(R)KeyFN4-Cmd PP")
 }
 
 record(seq, "$(P)$(R)TypePass-Cmd") {
@@ -340,12 +413,44 @@ record(seq, "$(P)$(R)TypePass-Cmd") {
     field(DOL2, "1")
     field(LNK2, "$(P)$(R)Key1-Cmd")
 
-    field(DLY2, "0.5")
-    field(DOL2, "1")
-    field(LNK2, "$(P)$(R)Key4-Cmd")
+    field(DLY3, "0.5")
+    field(DOL3, "1")
+    field(LNK3, "$(P)$(R)Key4-Cmd")
+
+    field(DLY4, "0.5")
+    field(DOL4, "1")
+    field(LNK4, "$(P)$(R)Key8-Cmd")
+}
+
+record(seq, "$(P)$(R)SetDefault-Cmd") {
+    field(DESC, "Set config as defined in default file")
+    field(SELM, "All")
+
+    field(DLY0, "0.5")
+    field(DOL0, "1")
+    field(LNK0, "$(P)$(R)KeyC-Cmd PP")
+
+    field(DLY1, "0.5")
+    field(DOL1, "1")
+    field(LNK1, "$(P)$(R)KeyLeft-Cmd PP")
 
     field(DLY2, "0.5")
     field(DOL2, "1")
-    field(LNK2, "$(P)$(R)Key8-Cmd")
+    field(LNK2, "$(P)$(R)KeyFN1-Cmd PP")
+
+    field(DLY3, "0.5")
+    field(DOL3, "1")
+    field(LNK3, "$(P)$(R)KeyFN2-Cmd PP")
+
+    field(DLY4, "0.5")
+    field(DOL4, "1")
+    field(LNK4, "$(P)$(R)KeyFN1-Cmd PP")
+
+    field(DLY5, "1")
+    field(DOL5, "1")
+    field(LNK5, "$(P)$(R)getConfig PP")
+
+    field(DLY6, "10")
+    field(DOL6, "1")
+    field(LNK6, "$(P)$(R)KeyC-Cmd PP")
 }
-# Implement record to change mode

@@ -14,7 +14,7 @@
 
 OutTerminator = CR;
 InTerminator  = CR LF;
-
+WriteTimeout = 1000;
 
 ###############################---Keyboard---###############################
 
@@ -51,7 +51,8 @@ cmd_sendPos     {out 0x1B "A0200"} #Command - Send current position
 cmd_reset       {out 0x1B "S0000"} #Command - Reset device
 cmd_lock        {out 0x1B "S0001"} #Command - Lock keyboard
 cmd_unlock      {out 0x1B "S0002"} #Command - Unlock keyboard
-
+cmd_setDefault  {OutTerminator= ETX;
+                out "%#s"}
 ##############################---Inputs---##############################
 
 #Axis output is in the format: X=[+-]0.0000["][RrDd]

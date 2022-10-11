@@ -1,6 +1,6 @@
-## EPICS IOC for Heidenhain nd780 Display
+# EPICS IOC for Heidenhain nd780 Display
 
-# Build
+## Build
 This IOC can be built following standard EPICS build procedure for IOCs.
 
 To build and run this IOC, the following EPICS modules are required:
@@ -16,14 +16,14 @@ Then, the path to these modules must be set at `configure/RELEASE`:
 MODULES = /<path>/<to>/<modules>
 ASYN = $(MODULES)/<path>/<to>/<asyn>
 STREAM = $(MODULES)//<path>/<to>/<StreamDevice>
-CALC = $(MODULES)//<path>/<to>/<Calc>
+CALC = $(MODULES)//<path>/<to>/<calc>
 ....
 EPICS_BASE = /<path>/<to>/<epics>/<base>
 ....
 ```
 After this, run `make install` from IOCs main directory.
 
-# Run
+## Run
 
 To execute the IOC, run:
 

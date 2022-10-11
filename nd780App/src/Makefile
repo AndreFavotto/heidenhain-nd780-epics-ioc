@@ -23,6 +23,7 @@ nd780_DBD += base.dbd
 
 # nd780_registerRecordDeviceDriver.cpp derives from nd780.dbd
 nd780_SRCS += nd780_registerRecordDeviceDriver.cpp
+nd780_SRCS += nd780config.c
 
 # Build the main IOC entry point on workstation OSs.
 nd780_SRCS_DEFAULT += nd780Main.cpp
@@ -43,6 +44,7 @@ nd780_DBD += stream.dbd
 nd780_DBD += asyn.dbd
 nd780_DBD += drvAsynSerialPort.dbd
 nd780_DBD += calcSupport.dbd
+nd780_DBD += nd780config.dbd
 
 nd780_LIBS += stream
 nd780_LIBS += asyn
