@@ -178,13 +178,13 @@ record(bo, "$(P)$(R)KeyDown-Cmd") {
 
 ##########################--Auxiliary Records--###############################
 
-# record(ai, "$(P)$(R)IntrAux") {
-#     field(DESC, "Triggers I/O Interruption")
-#     field(DTYP, "stream")
-#     field(SCAN, ".1 second")
-#     field(PREC, "5")
-#     field(INP,  "@nd780.proto get_positions nd780")
-# }
+record(ai, "$(P)$(R)IntrAux") {
+    field(DESC, "Triggers I/O Interruption")
+    field(DTYP, "stream")
+    field(SCAN, ".1 second")
+    field(PREC, "5")
+    field(INP,  "@nd780.proto get_positions nd780")
+}
 record(stringin, "$(P)$(R)ModeXAux") {
     field(DESC, "Gets X current mode")
     field(DTYP, "stream")
@@ -310,10 +310,6 @@ record(seq, "$(P)$(R)ToggleMeasure-Cmd") {
     field(DLY1, "0.5")
     field(DOL1, "1")
     field(LNK1, "$(P)$(R)KeyFN3-Cmd PP")
-
-    field(DLY2, "0.5")
-    field(DOL2, "1")
-    field(LNK2, "$(P)$(R)KeyC-Cmd PP")
 }
 
 record(seq, "$(P)$(R)ToggleEU-Cmd") {
@@ -356,11 +352,6 @@ record(seq, "$(P)$(R)SetZeroX-Cmd") {
     field(DLY3, "0.5")
     field(DOL3, "1")
     field(LNK3, "$(P)$(R)KeyFN4-Cmd PP")
-
-    field(DLY4, "0.5")
-    field(DOL4, "1")
-    field(LNK4, "$(P)$(R)KeyC-Cmd PP")
-
 }
 
 record(seq, "$(P)$(R)SetZeroY-Cmd") {
@@ -369,15 +360,19 @@ record(seq, "$(P)$(R)SetZeroY-Cmd") {
 
     field(DLY0, "0.5")
     field(DOL0, "1")
-    field(LNK0, "$(P)$(R)KeyFN4-Cmd PP")
+    field(LNK0, "$(P)$(R)KeyC-Cmd PP")
 
     field(DLY1, "0.5")
     field(DOL1, "1")
-    field(LNK1, "$(P)$(R)KeyY-Cmd PP")
+    field(LNK1, "$(P)$(R)KeyFN4-Cmd PP")
 
     field(DLY2, "0.5")
     field(DOL2, "1")
-    field(LNK2, "$(P)$(R)KeyFN4-Cmd PP")
+    field(LNK2, "$(P)$(R)KeyY-Cmd PP")
+
+    field(DLY3, "0.5")
+    field(DOL3, "1")
+    field(LNK3, "$(P)$(R)KeyFN4-Cmd PP")
 }
 
 record(seq, "$(P)$(R)SetZeroZ-Cmd") {
@@ -386,15 +381,19 @@ record(seq, "$(P)$(R)SetZeroZ-Cmd") {
 
     field(DLY0, "0.5")
     field(DOL0, "1")
-    field(LNK0, "$(P)$(R)KeyFN4-Cmd PP")
+    field(LNK0, "$(P)$(R)KeyC-Cmd PP")
 
     field(DLY1, "0.5")
     field(DOL1, "1")
-    field(LNK1, "$(P)$(R)KeyZ-Cmd PP")
+    field(LNK1, "$(P)$(R)KeyFN4-Cmd PP")
 
     field(DLY2, "0.5")
     field(DOL2, "1")
-    field(LNK2, "$(P)$(R)KeyFN4-Cmd PP")
+    field(LNK2, "$(P)$(R)KeyZ-Cmd PP")
+
+    field(DLY3, "0.5")
+    field(DOL3, "1")
+    field(LNK3, "$(P)$(R)KeyFN4-Cmd PP")
 }
 
 record(seq, "$(P)$(R)TypePass-Cmd") {
