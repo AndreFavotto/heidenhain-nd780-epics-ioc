@@ -1,174 +1,174 @@
 ##########################--Keyboard--###############################
 
-record(bo, "$(P)$(R)Key0-Cmd") {
+record(bo, "$(P)$(R)Key0") {
     field(DESC, "toggle key 0")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_zero nd780")
 }
-record(bo, "$(P)$(R)Key1-Cmd") {
+record(bo, "$(P)$(R)Key1") {
     field(DESC, "toggle key 1")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_one nd780")
 }
-record(bo, "$(P)$(R)Key2-Cmd") {
+record(bo, "$(P)$(R)Key2") {
     field(DESC, "toggle key 2")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_axisX nd780")
 }
-record(bo, "$(P)$(R)Key3-Cmd") {
+record(bo, "$(P)$(R)Key3") {
     field(DESC, "toggle key 3")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_three nd780")
 }
-record(bo, "$(P)$(R)Key4-Cmd") {
+record(bo, "$(P)$(R)Key4") {
     field(DESC, "toggle key 4")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_four nd780")
 }
-record(bo, "$(P)$(R)Key5-Cmd") {
+record(bo, "$(P)$(R)Key5") {
     field(DESC, "toggle key 5")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_five nd780")
 }
-record(bo, "$(P)$(R)Key6-Cmd") {
+record(bo, "$(P)$(R)Key6") {
     field(DESC, "toggle key 6")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_six nd780")
 }
-record(bo, "$(P)$(R)Key7-Cmd") {
+record(bo, "$(P)$(R)Key7") {
     field(DESC, "toggle key 7")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_seven nd780")
 }
-record(bo, "$(P)$(R)Key8-Cmd") {
+record(bo, "$(P)$(R)Key8") {
     field(DESC, "toggle key 8")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_eight nd780")
 }
-record(bo, "$(P)$(R)Key9-Cmd") {
+record(bo, "$(P)$(R)Key9") {
     field(DESC, "toggle key 9")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_nine nd780")
 }
-record(bo, "$(P)$(R)KeyC-Cmd") {
+record(bo, "$(P)$(R)KeyC") {
     field(DESC, "toggle key C")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_clear nd780")
 }
-record(bo, "$(P)$(R)KeyMinus-Cmd") {
+record(bo, "$(P)$(R)KeyMinus") {
     field(DESC, "toggle key minus")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_minus nd780")
 }
-record(bo, "$(P)$(R)KeyPoint-Cmd") {
+record(bo, "$(P)$(R)KeyPoint") {
     field(DESC, "toggle key point")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_point nd780")
 }
-record(bo, "$(P)$(R)KeyEnt-Cmd") {
+record(bo, "$(P)$(R)KeyEnt") {
     field(DESC, "toggle key enter")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_ent nd780")
 }
-record(bo, "$(P)$(R)KeyX-Cmd") {
+record(bo, "$(P)$(R)KeyX") {
     field(DESC, "toggle key X")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_axisX nd780")
 }
-record(bo, "$(P)$(R)KeyY-Cmd") {
+record(bo, "$(P)$(R)KeyY") {
     field(DESC, "toggle key Y")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_axisY nd780")
 }
-record(bo, "$(P)$(R)KeyZ-Cmd") {
+record(bo, "$(P)$(R)KeyZ") {
     field(DESC, "toggle key Z")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_axisZ nd780")
 }
-record(bo, "$(P)$(R)KeyFN1-Cmd") {
+record(bo, "$(P)$(R)KeyFN1") {
     field(DESC, "toggle key Function 1")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_fn1 nd780")
 }
-record(bo, "$(P)$(R)KeyFN2-Cmd") {
+record(bo, "$(P)$(R)KeyFN2") {
     field(DESC, "toggle key Function 1")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_fn2 nd780")
 }
-record(bo, "$(P)$(R)KeyFN3-Cmd") {
+record(bo, "$(P)$(R)KeyFN3") {
     field(DESC, "toggle key Function 1")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_fn3 nd780")
 }
-record(bo, "$(P)$(R)KeyFN4-Cmd") {
+record(bo, "$(P)$(R)KeyFN4") {
     field(DESC, "toggle key Function 4")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_fn4 nd780")
 }
-record(bo, "$(P)$(R)KeyRight-Cmd") {
+record(bo, "$(P)$(R)KeyRight") {
     field(DESC, "toggle key right arrow")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_right nd780")
 }
-record(bo, "$(P)$(R)KeyLeft-Cmd") {
+record(bo, "$(P)$(R)KeyLeft") {
     field(DESC, "toggle key left arrow")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_left nd780")
 }
-record(bo, "$(P)$(R)KeyUp-Cmd") {
+record(bo, "$(P)$(R)KeyUp") {
     field(DESC, "toggle key up arrow")
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
     field(OUT,  "@nd780.proto write_up nd780")
 }
-record(bo, "$(P)$(R)KeyDown-Cmd") {
+record(bo, "$(P)$(R)KeyDown") {
     field(DESC, "toggle key down arrow")
     field(DTYP, "stream")
     field(ZNAM, "0")
@@ -182,7 +182,6 @@ record(ai, "$(P)$(R)IntrAux") {
     field(DESC, "Triggers I/O Interruption")
     field(DTYP, "stream")
     field(SCAN, ".1 second")
-    field(PREC, "5")
     field(INP,  "@nd780.proto get_positions nd780")
 }
 record(stringin, "$(P)$(R)ModeXAux") {
@@ -203,7 +202,7 @@ record(stringin, "$(P)$(R)ModeZAux") {
     field(SCAN, "I/O Intr")
     field(INP,  "@nd780.proto get_modeZ nd780")
 }
-record(stringin, "$(P)$(R)EGUAux") {
+record(stringin, "$(P)$(R)EUAux") {
     field(DESC, "Gets current Engineering Unit")
     field(DTYP, "stream")
     field(SCAN, "I/O Intr")
@@ -211,7 +210,7 @@ record(stringin, "$(P)$(R)EGUAux") {
 }
 
 record(aSub, "$(P)$(R)getConfig") {
-    field(DESC, "updload default configs")
+    field(DESC, "get default configs from file")
     field(SNAM, "getConfig")
     field(EFLG, "ALWAYS")
     field(LFLG, "IGNORE")
@@ -221,12 +220,42 @@ record(aSub, "$(P)$(R)getConfig") {
 }
 
 record(waveform, "$(P)$(R)uploadConfig") {
-    field(DESC, "description")
+    field(DESC, "uploads default configs to nd780")
     field(DTYP, "stream")
     field(NELM, "8500")
     field(INP, "@nd780.proto cmd_setDefault nd780")
     field(FTVL, "CHAR")
 }
+
+record(seq, "$(P)$(R)TypePass") {
+    field(DESC, "Types Password")
+    field(SELM, "All")
+
+    field(DLY0, "0.5")
+    field(DOL0, "1")
+    field(LNK0, "$(P)$(R)Key9 PP")
+
+    field(DLY1, "0.5")
+    field(DOL1, "1")
+    field(LNK1, "$(P)$(R)Key5 PP")
+
+    field(DLY2, "0.5")
+    field(DOL2, "1")
+    field(LNK2, "$(P)$(R)Key1 PP")
+
+    field(DLY3, "0.5")
+    field(DOL3, "1")
+    field(LNK3, "$(P)$(R)Key4 PP")
+
+    field(DLY4, "0.5")
+    field(DOL4, "1")
+    field(LNK4, "$(P)$(R)Key8 PP")
+    
+    field(DLY5, "0.5")
+    field(DOL5, "1")
+    field(LNK5, "$(P)$(R)KeyEnt PP")
+}
+
 ##########################--Monitoring--###############################
 
 record(ai, "$(P)$(R)PosX-Mon") {
@@ -240,10 +269,10 @@ record(ai, "$(P)$(R)PosX-Mon") {
 record(scalcout, "$(P)$(R)ModeX-Mon") {
     field(DESC, "Get current X measure mode")
     field(INAA, "$(P)$(R)ModeXAux CPP")
-    field(BB, "Radius")
-    field(CC, "Delta Radius")
-    field(DD, "Diameter")
-    field(EE, "Delta Diameter")
+    field(BB, "Absolute radius")
+    field(CC, "Differential radius")
+    field(DD, "Absolute diameter")
+    field(EE, "Differential diameter")
     field(CALC, "AA='R'?BB:(AA='r'?CC:(AA='D'?DD:(AA=d?EE:'Not found')))")
 }
 
@@ -256,7 +285,7 @@ record(ai, "$(P)$(R)PosY-Mon") {
 }
 
 record(scalcout, "$(P)$(R)ModeY-Mon") {
-    field(DESC, "Get current YX measure mode")
+    field(DESC, "Get current Y measure mode")
     field(INAA, "$(P)$(R)ModeYAux CPP")
     field(BB, "Absolute radius")
     field(CC, "Differential radius")
@@ -286,7 +315,7 @@ record(scalcout, "$(P)$(R)ModeZ-Mon") {
 record(scalcout, "$(P)$(R)EU-Mon") {
     field(DESC, "Get current engineering units")
     field(INAA, "$(P)$(R)EUAux CPP")
-    field(CALC, "AA=' '?'mm':(AA='\"'?'pol':'Not found')")
+    field(CALC, "AA=' '?'mm':(AA='\"'?'in':'Not found')")
 }
 
 ##########################--Commands--###############################
@@ -299,17 +328,17 @@ record(bo, "$(P)$(R)Rst-Cmd") {
     field(OUT,  "@nd780.proto cmd_reset nd780")
 }
 
-record(seq, "$(P)$(R)ToggleMeasure-Cmd") {
+record(seq, "$(P)$(R)ToggleMode-Cmd") {
     field(DESC, "Toggle differential/absolute measure")
     field(SELM, "All")
 
     field(DLY0, "0.5")
     field(DOL0, "1")
-    field(LNK0, "$(P)$(R)KeyC-Cmd PP")
+    field(LNK0, "$(P)$(R)KeyC PP")
 
     field(DLY1, "0.5")
     field(DOL1, "1")
-    field(LNK1, "$(P)$(R)KeyFN3-Cmd PP")
+    field(LNK1, "$(P)$(R)KeyFN3 PP")
 }
 
 record(seq, "$(P)$(R)ToggleEU-Cmd") {
@@ -318,19 +347,19 @@ record(seq, "$(P)$(R)ToggleEU-Cmd") {
 
     field(DLY0, "0.5")
     field(DOL0, "1")
-    field(LNK0, "$(P)$(R)KeyC-Cmd PP")
+    field(LNK0, "$(P)$(R)KeyC PP")
 
     field(DLY1, "0.5")
     field(DOL1, "1")
-    field(LNK1, "$(P)$(R)KeyLeft-Cmd PP")
+    field(LNK1, "$(P)$(R)KeyLeft PP")
 
     field(DLY2, "0.5")
     field(DOL2, "1")
-    field(LNK2, "$(P)$(R)KeyFN4-Cmd PP")
+    field(LNK2, "$(P)$(R)KeyFN4 PP")
 
     field(DLY3, "0.5")
     field(DOL3, "1")
-    field(LNK3, "$(P)$(R)KeyC-Cmd PP")
+    field(LNK3, "$(P)$(R)KeyC PP")
 }
 
 record(seq, "$(P)$(R)SetZeroX-Cmd") {
@@ -339,19 +368,19 @@ record(seq, "$(P)$(R)SetZeroX-Cmd") {
     
     field(DLY0, "0.5")
     field(DOL0, "1")
-    field(LNK0, "$(P)$(R)KeyC-Cmd PP")
+    field(LNK0, "$(P)$(R)KeyC PP")
 
     field(DLY1, "0.5")
     field(DOL1, "1")
-    field(LNK1, "$(P)$(R)KeyFN4-Cmd PP")
+    field(LNK1, "$(P)$(R)KeyFN4 PP")
 
     field(DLY2, "0.5")
     field(DOL2, "1")
-    field(LNK2, "$(P)$(R)KeyX-Cmd PP")
+    field(LNK2, "$(P)$(R)KeyX PP")
 
     field(DLY3, "0.5")
     field(DOL3, "1")
-    field(LNK3, "$(P)$(R)KeyFN4-Cmd PP")
+    field(LNK3, "$(P)$(R)KeyFN4 PP")
 }
 
 record(seq, "$(P)$(R)SetZeroY-Cmd") {
@@ -360,19 +389,19 @@ record(seq, "$(P)$(R)SetZeroY-Cmd") {
 
     field(DLY0, "0.5")
     field(DOL0, "1")
-    field(LNK0, "$(P)$(R)KeyC-Cmd PP")
+    field(LNK0, "$(P)$(R)KeyC PP")
 
     field(DLY1, "0.5")
     field(DOL1, "1")
-    field(LNK1, "$(P)$(R)KeyFN4-Cmd PP")
+    field(LNK1, "$(P)$(R)KeyFN4 PP")
 
     field(DLY2, "0.5")
     field(DOL2, "1")
-    field(LNK2, "$(P)$(R)KeyY-Cmd PP")
+    field(LNK2, "$(P)$(R)KeyY PP")
 
     field(DLY3, "0.5")
     field(DOL3, "1")
-    field(LNK3, "$(P)$(R)KeyFN4-Cmd PP")
+    field(LNK3, "$(P)$(R)KeyFN4 PP")
 }
 
 record(seq, "$(P)$(R)SetZeroZ-Cmd") {
@@ -381,45 +410,21 @@ record(seq, "$(P)$(R)SetZeroZ-Cmd") {
 
     field(DLY0, "0.5")
     field(DOL0, "1")
-    field(LNK0, "$(P)$(R)KeyC-Cmd PP")
+    field(LNK0, "$(P)$(R)KeyC PP")
 
     field(DLY1, "0.5")
     field(DOL1, "1")
-    field(LNK1, "$(P)$(R)KeyFN4-Cmd PP")
+    field(LNK1, "$(P)$(R)KeyFN4 PP")
 
     field(DLY2, "0.5")
     field(DOL2, "1")
-    field(LNK2, "$(P)$(R)KeyZ-Cmd PP")
+    field(LNK2, "$(P)$(R)KeyZ PP")
 
     field(DLY3, "0.5")
     field(DOL3, "1")
-    field(LNK3, "$(P)$(R)KeyFN4-Cmd PP")
+    field(LNK3, "$(P)$(R)KeyFN4 PP")
 }
 
-record(seq, "$(P)$(R)TypePass-Cmd") {
-    field(DESC, "Types Password")
-    field(SELM, "All")
-
-    field(DLY0, "0.5")
-    field(DOL0, "1")
-    field(LNK0, "$(P)$(R)Key9-Cmd")
-
-    field(DLY1, "0.5")
-    field(DOL1, "1")
-    field(LNK1, "$(P)$(R)Key5-Cmd")
-
-    field(DLY2, "0.5")
-    field(DOL2, "1")
-    field(LNK2, "$(P)$(R)Key1-Cmd")
-
-    field(DLY3, "0.5")
-    field(DOL3, "1")
-    field(LNK3, "$(P)$(R)Key4-Cmd")
-
-    field(DLY4, "0.5")
-    field(DOL4, "1")
-    field(LNK4, "$(P)$(R)Key8-Cmd")
-}
 
 record(seq, "$(P)$(R)SetDefault-Cmd") {
     field(DESC, "Set config as defined in default file")
@@ -427,23 +432,23 @@ record(seq, "$(P)$(R)SetDefault-Cmd") {
 
     field(DLY0, "0.5")
     field(DOL0, "1")
-    field(LNK0, "$(P)$(R)KeyC-Cmd PP")
+    field(LNK0, "$(P)$(R)KeyC PP")
 
     field(DLY1, "0.5")
     field(DOL1, "1")
-    field(LNK1, "$(P)$(R)KeyLeft-Cmd PP")
+    field(LNK1, "$(P)$(R)KeyLeft PP")
 
     field(DLY2, "0.5")
     field(DOL2, "1")
-    field(LNK2, "$(P)$(R)KeyFN1-Cmd PP")
+    field(LNK2, "$(P)$(R)KeyFN1 PP")
 
     field(DLY3, "0.5")
     field(DOL3, "1")
-    field(LNK3, "$(P)$(R)KeyFN2-Cmd PP")
+    field(LNK3, "$(P)$(R)KeyFN2 PP")
 
     field(DLY4, "0.5")
     field(DOL4, "1")
-    field(LNK4, "$(P)$(R)KeyFN1-Cmd PP")
+    field(LNK4, "$(P)$(R)KeyFN1 PP")
 
     field(DLY5, "1")
     field(DOL5, "1")
@@ -451,5 +456,5 @@ record(seq, "$(P)$(R)SetDefault-Cmd") {
 
     field(DLY6, "10")
     field(DOL6, "1")
-    field(LNK6, "$(P)$(R)KeyC-Cmd PP")
+    field(LNK6, "$(P)$(R)KeyC PP")
 }

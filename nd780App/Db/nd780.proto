@@ -56,7 +56,7 @@ cmd_setDefault  {out "%#s"}
 
 #Axis output is in the format: X=[+-]0.0000["][RrDd]
 get_positions   {
-                out 0x1B "A0200";
+                 out 0x1B "A0200";
                 in  "\x06X=%#f" "%*?c" "%*[RrDd]";
                 in  "Y=%#*f"    "%*?c" "%*[RrDd]";
                 in  "Z=%#*f" "%*?c" "%*[RrDd]";
