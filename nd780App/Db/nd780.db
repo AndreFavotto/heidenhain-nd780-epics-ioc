@@ -19,7 +19,7 @@ record(bo, "$(P)$(R)Key2") {
     field(DTYP, "stream")
     field(ZNAM, "0")
     field(ONAM, "1")
-    field(OUT,  "@nd780.proto write_axisX nd780")
+    field(OUT,  "@nd780.proto write_two nd780")
 }
 record(bo, "$(P)$(R)Key3") {
     field(DESC, "toggle key 3")
