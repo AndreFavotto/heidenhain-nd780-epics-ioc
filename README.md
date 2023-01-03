@@ -39,10 +39,15 @@ Where:
 
 ## Run graphical interface
 
-To run the IOC's interface, pydm and it's dependancies must be installed running:
+To run the IOC's interface, the easiest way is using the Anaconda system, which can be found in:  https://www.anaconda.com/download/.
+After installing Anaconda, create a new environment for PyDM and it's dependancies: 
 
-`pip install pydm`
+`conda create -n pydm-environment python=3.8 "pyqt >=5,<5.15" pip numpy scipy six psutil pyqtgraph pydm -c conda-forge` 
 
+And then activate it:
+
+`source activate pydm-environment` 
+ 
 Then, one can run:
 
 `pydm -m 'P=<PREFIX1>, R=<PREFIX2>' nd780.ui`
