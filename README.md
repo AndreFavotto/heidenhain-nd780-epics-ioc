@@ -48,7 +48,7 @@ And then activate it:
 
 `source activate pydm-environment` 
  
-Then, one can run:
+After this, one can run:
 
 `pydm -m 'P=<PREFIX1>, R=<PREFIX2>' nd780.ui`
 
