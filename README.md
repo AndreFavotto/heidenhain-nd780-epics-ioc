@@ -42,15 +42,21 @@ Where:
 To run the IOC's interface, the easiest way is using the Anaconda system, which can be found in:  https://www.anaconda.com/download/.
 After installing Anaconda, create a new environment for PyDM and it's dependancies: 
 
-`conda create -n pydm-environment python=3.8 "pyqt >=5,<5.15" pip numpy scipy six psutil pyqtgraph pydm -c conda-forge` 
+``` 
+conda create -n your-pydm-environment python=3.8 "pyqt >=5,<5.15" pip numpy scipy six psutil pyqtgraph pydm -c conda-forge
+```
 
 And then activate it:
 
-`source activate pydm-environment` 
+``` 
+source activate your-pydm-environment 
+```
  
 After this, one can run:
 
-`pydm -m 'P=<PREFIX1>, R=<PREFIX2>' nd780.ui`
+``` 
+pydm -m 'P=<PREFIX1>, R=<PREFIX2>' nd780.ui
+```
 
  Where:
 - `-P PREFIX1`: the value of the EPICS `$(P)` macro used to prefix the PV names
