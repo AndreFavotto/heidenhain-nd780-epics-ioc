@@ -56,4 +56,6 @@ Then, one can run:
 - `-P PREFIX1`: the value of the EPICS `$(P)` macro used to prefix the PV names
 - `-R PREFIX2`: the value of the EPICS `$(R)` macro used to prefix the PV names
 
+For more information about PyDM installation, see https://slaclab.github.io/pydm/installation.html.
+
 For now, IOC runs locally, and it is yet to be containerized.
